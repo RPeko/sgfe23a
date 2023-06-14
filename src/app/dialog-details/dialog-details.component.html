@@ -1,0 +1,15 @@
+<mat-dialog-content>
+    <button mat-button mat-dialog-close><mat-icon>keyboard_return</mat-icon></button>
+    <table mat-table [dataSource]="detalji" class="mat-elevation-z8">
+      <ng-container matColumnDef="stavka">
+        <!-- <th mat-header-cell *matHeaderCellDef> Stavka </th> -->
+        <td mat-cell *matCellDef="let det"  id="stavka"> {{det.stavka}} </td>
+      </ng-container>
+      <ng-container matColumnDef="opis">
+        <!-- <th mat-header-cell *matHeaderCellDef> Opis </th> -->
+        <td mat-cell *matCellDef="let det" id="opis"> {{det.opis}} </td>
+      </ng-container>
+      <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr> -->
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </mat-dialog-content>

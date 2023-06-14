@@ -1,0 +1,17 @@
+import { GeomPolygon } from '../models/geom_polygon';
+
+export class Poligon {
+  geom: GeomPolygon;
+  info: string;
+  icon: string;
+  label: string;
+  strokeColor: string;
+  strokeOpacity: number;
+  strokeWeight: number;
+  fillColor: string;
+  fillOpacity: number;
+  useFillPattern: boolean;
+  objectId: number;
+  layerId: number;
+  detalji: any;
+}
